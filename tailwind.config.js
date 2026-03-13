@@ -16,6 +16,13 @@ module.exports = {
           gray: '#f9f9f9',
           text: '#222222',
           muted: '#696969'
+        },
+        auth: {
+          purple: '#6C48F5',
+          navy: '#0E173C',
+          cyan: '#1CBBB5',
+          pink: '#E9316C',
+          blue: '#3144D9',
         }
       },
       animation: {
