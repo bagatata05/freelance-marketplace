@@ -45,27 +45,27 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
+    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-20 items-center">
+          <div className="flex items-center gap-8">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-blue-600">FreelanceHub</span>
+              <span className="text-2xl font-black tracking-tight text-gray-900">Freelance<span className="text-behance-blue">Hub</span></span>
             </Link>
           </div>
 
           {user && (
-            <div className="hidden md:flex md:items-center md:space-x-8">
+            <div className="hidden md:flex items-center space-x-1 font-semibold text-sm">
               <Link
-                to="/jobs"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActivePath('/jobs')
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-              >
-                Browse Jobs
-              </Link>
+                  to="/jobs"
+                  className={`px-4 py-2 rounded-full transition-colors ${
+                    isActivePath('/jobs')
+                      ? 'bg-gray-100 text-gray-900'
+                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  }`}
+                >
+                  Explore Jobs
+                </Link>
 
               {user.userType === 'freelancer' && (
                 <>
